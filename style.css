@@ -4,53 +4,86 @@ body {
   }
 .logo img{
     background-size: cover;
-    padding-top: 10px;
+    padding-top: 12px;
 }
-
+.nav a{
+  text-align: center;
+  font-size: 55px;
+  line-height: 2;
+}
 .navigation{
     display: flex;
     justify-content: space-between;
 }
-  .sidenav {
-    height: 100%;
-    width: 0px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f9c479;
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 60px;
+
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 1s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+#mySidenav a:hover {
+  color: #f1f1f1;
+  animation-name: colorchange;
+  animation-duration: 8s;
+animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+@keyframes colorchange {
+  0%{
+    color: red;
+
   }
+  20%{
+    color: rgb(0, 255, 242);
+    
+  }
+  50%{
+    color: rgb(255, 0, 212);
+    
+  }
+  70%{
+    color: rgb(102, 255, 0);
+    
+  }
+  100%{
+    color: rgb(200, 255, 0);
+    
+  }
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 0 px;
+}
+
+
   
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
