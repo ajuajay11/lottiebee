@@ -19,6 +19,29 @@
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-shadow: 2px 2px rgb(109, 129, 216);
       padding: 0px 5px;
+      animation-name: shadow;
+    }
+    @keyframes shadow {
+      0%{
+        text-shadow: 2px 2px rgb(109, 129, 216);
+    
+      }
+      20%{
+        text-shadow: 2px 2px rgb(8, 185, 82);
+        
+      }
+      50%{
+        text-shadow: 2px 2px rgb(185, 183, 27);
+        
+      }
+      70%{
+        text-shadow: 2px 2px rgb(98, 23, 160);
+        
+      }
+      100%{
+        text-shadow: 2px 2px rgb(206, 54, 193);
+        
+      }
     }
   }
   /* .sidenav {padding-top: 15px;}
