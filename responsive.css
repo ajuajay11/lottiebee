@@ -3,7 +3,29 @@
     .hero{
         display: none;
     }
- /* instagram gallery images */
+    .s2 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+  /* aboutus home images */
+     .s2 {
+         flex-direction: column;
+     }
+     .s2-col1, .s2-col2, .s2-col3{
+        width: 90%;
+     }
+     .s2-img .s2-image1, .s2-image2{
+        height: 380px;
+     }
+     .s2-col2{
+        margin: 0px;
+     }
+     .s2-content{
+        padding: 200px 10px;
+     }
+  /* aboutus home images */
+  /* instagram gallery images */
  
     .s3-gallery {
         flex-direction: column;
@@ -19,7 +41,6 @@
     }
     .s3sub-img1 img {
         width: 178px;
-
     }
     .s3-gallery .s3-gal1 {
         margin: 0px; 
