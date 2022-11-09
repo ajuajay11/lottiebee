@@ -1,0 +1,19 @@
+@media (max-width: 575.98px) { 
+    .hero {
+        min-height: 100vh;
+        width: 100vh !important;
+        display: flex;
+        flex-flow: column-reverse;
+        flex-direction: column-reverse;
+    }
+.col-2 {
+    width: 100vh;
+    padding-top: 20px;
+    height: 100vh;
+    background: url(./images/My\ project\ \(15\).png);
+    /* background-position: 65%; */
+    background-size: 216vw 221vw;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+}
