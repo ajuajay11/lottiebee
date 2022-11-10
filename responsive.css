@@ -1,14 +1,10 @@
 @media (max-width: 575.98px) {
 
-    .hero{
-        display: none;
-    }
-    .s2 {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-    }
+    
   /* aboutus home images */
+  .hero{
+    display: none;
+  }
      .s2 {
          flex-direction: column;
      }
