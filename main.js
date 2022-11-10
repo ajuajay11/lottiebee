@@ -42,7 +42,8 @@
             brand:"lottie",
             productName:"lottie222",
             crossRate:290,
-            offer:25
+            offer:25,
+            url:"https://git.com/"
         },{
           image:"./images/attachments (1)/IMG_20220819_162053.jpg",
           newBadge: "new",
@@ -78,7 +79,8 @@
               brand:"lottie",
               productName:"lottie22223233",
               crossRate:290,
-              offer:25
+              offer:25,
+              
           }];
 
           let x = "";
@@ -86,7 +88,7 @@
 let value = "";
 var parent=document.getElementById("prduct-page");
 
-products.map((product)=>{
+products.map((product,index)=>{
 
 value = value + `<div class="subproduct-section">
 <div class="p-image">
@@ -101,34 +103,16 @@ value = value + `<div class="subproduct-section">
           <span><del>₹${product.crossRate}</del> &nbsp<span class="og-rate">₹${product.crossRate - (product.offer/100 * product.crossRate)} </span> &nbsp<span class="off">${product.offer}%</span></span>
       </div>    
       <div class="order">
-          <button style="font-size:20px"> <i class="fa fa-whatsapp" style="font-size:17px;color:rgb(255, 255, 255)" onclick="myFunction()"> Shop Now</i></button>
+          <button style="font-size:20px"> <i class="fa fa-whatsapp" style="font-size:17px;color:rgb(255, 255, 255)" onclick="myFunction(this)" data-index = ${index}> Shop Now</i></button>
       </div>
   </div>
 </div>
-<div class="popup" id="popup">
-
-        <div class="confirmation">
-            <div class="img">
-                <img style="width: 140px;" src="./images/WhatsApp-Logo.wine.png" alt="whatsapp">
-            </div>
-            <div class="popup-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facere voluptas explicabo omnis placeat aliquid et itaque praesentium dolore expedita.
-            </div>
-            <div class="con-yesno">
-                <div class="yesno">
-                    <a id="btn-yes" href="${product.url}">yes</a>
-                </div>
-                <div class="yesno">
-                    <a id="btn" href="#">No</a>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>`;
 parent.innerHTML= value
 
 
 });
+
 
       //     var parent=document.getElementById("prduct-page");
       //     parent.innerHTML=`<div class="subproduct-section">
@@ -151,10 +135,14 @@ parent.innerHTML= value
       // </div> }`;  
 // PRODUCT RATE ENDS JS///////////////////////////////////////////////////////////////////////////
 
-
 // popup confirmation yes and no start/////////////////////////////////////////////////////////
 
-function myFunction() {
+function myFunction(element) {
+  let index = element.getAttribute("data-index");
+
+  var yesButton=document.getElementById("btn-yes");
+  yesButton.setAttribute("href", products[index].url); 
+  
   var x = document.getElementById("popup");
   if (x.style.display === "none") {
     x.style.display = "block";
