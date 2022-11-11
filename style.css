@@ -4,11 +4,13 @@
 
 
 body{
+  display: none;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   background: #fff9f7;
-  color: #a79362;
+  /* color: #84795d#a79362; */
+  color: #84795d;
 }
   
 #menu {
@@ -18,14 +20,14 @@ body{
 #menu-bar {
   width: 45px;
   height: 40px;
-  margin: 30px 20px 20px 0px;
+  margin: 30px 20px 20px 37px;
   cursor: pointer;
 }
 
 .bar {
   height: 5px;
   width: 100%;
-  background-color: #DC052D;
+  background-color: #a79362;
   display: block;
   border-radius: 5px;
   transition: 0.3s ease;
@@ -74,7 +76,7 @@ body{
   width: 0;
   height: 0;
   margin: 30px 0 20px 20px;
-  background: radial-gradient(circle, #DC052D, #DC052D);
+  background: radial-gradient(circle, #a79362, #a79362);
   border-top-left-radius: 62%;
   border-bottom-left-radius: 52%;
   transition: 0.3s ease;
@@ -317,6 +319,23 @@ body{
     object-fit: cover;
     border: 3px solid rgb(224, 224, 224);
   }
+  .two-images .image1:hover{
+    animation: img-hover 4s ease-in-out infinite;
+  }
+  .two-images .image2:hover{
+    animation: img-hover 4s ease-in-out infinite;
+  }
+  @keyframes img-hover{
+    0%{
+      transform: translatey(0px);
+    }
+    50%{
+      transform: translateY(-40px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
   .two-images .image2{
     align-items: center;
     width: 200px;
@@ -345,6 +364,9 @@ body{
       font-weight:bold  ;
       margin: 10px;
       padding-bottom: 30px;
+    }
+    .section-two{
+      background-image: linear-gradient(to bottom, #fdefea 0%, #fffcf9 100%) !important;
     }
     .s2{
       display: flex;
@@ -377,18 +399,42 @@ body{
    .s2-content{
     color:rgb(59, 59, 59);
     background: #ffffff65;
-    padding: 314px 20px;
+    padding: 290px 20px;
     margin: 0px;
    } 
-   .instagram-gallery{
-    justify-content: center;
-    display: flex;
+   .s2-content h2{
+    font-family: sail;
+    font-size: 36px;
+   } 
+   .s2-content p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 20px;
+    font-weight: 500;
    }
+   .s2-abtus a{
+    font-size: 18px;
+    font-family: hind;
+    color: #ffffff;
+    background: #a79362;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: 1s;
+  }
+  .s2-abtus a:hover{
+    background: #ffd8a2;
+    box-shadow: 0px 0px 20px 3px rgb(213 174 116 / 80%);
+    color: #444;
+   }
+   
   /* section two ends */
 
 
   /* section three starts */
 
+  .instagram-gallery{
+    justify-content: center;
+    display: flex;
+   }
   .section-three{
     padding: 100px 0px;
     background: #fff;
@@ -412,17 +458,17 @@ body{
     margin:20px 10px;
   }
   .s3-gallery .s3-gal2 .s3-gal1-img{
-    width:400px;
+    width:100%;
     
   }
   .s3-gallery .s3-gal1 .s3-gal1-img{
-    width:400px;
+    width:100%;
     
   }
   .s3-gal1-img{
     box-shadow: 0 2px 4px, 0 0px 0px 0px, 0 1px 1px -1px, 0 1px 3px -2px, 0 0px 5px 2px, 0 24px 34px 5px;
     border-radius: 3%;
-    color: rgb(239 239 239)
+    color: rgb(239 239 239);
   }
   .s3sub-img1 img{
     box-shadow: 0 2px 4px, 0 0px 0px 0px, 0 1px 1px -1px, 0 1px 3px -2px, 0 0px 5px 2px, 0 24px 34px 5px;
@@ -451,6 +497,7 @@ body{
   .subproduct-section{
     margin: 30px 11.5px;
     justify-content: space-around;
+      width: 20.33%;
   } 
   
   .product-page{
@@ -488,6 +535,7 @@ body{
     border-bottom-right-radius: 20px;
     padding: 10px 10px 10px 15px;
     background-image: linear-gradient(to right, #ffedd6 0%, #ffd9cc 100%);
+    height: 160px;
   }
   .product-made{
     padding: 2px 0px;
@@ -505,7 +553,7 @@ body{
   }
   .rate{
     display: flex;
-    padding: 3px 0px;
+    padding: 4px 0px 14px 0px;
   }
   .off{
     color: #0c8f08;
@@ -517,15 +565,16 @@ body{
     font-weight: 600;
   }
   .order button{
-    background: rgb(255 199 151);
-    padding: 9px 50px;
-    border: 0;
-    border-radius: 14px;
-    box-shadow: 1px 1px 1px 1px #ffa474;
-    cursor: pointer;
+    
+      background: #998656;
+      padding: 9px 50px;
+      border: 0;
+      border-radius: 14px;
+      box-shadow: 1px 1px 1px 1px #615435;
+      cursor: pointer;
   }
   .order button:hover{
-    background: rgb(255, 183, 119);
+    background: #96814c;
     transition: 1s;
   }
   
@@ -541,6 +590,9 @@ body{
       100%{
         opacity: 1;
       }
+    }
+    .old{
+      display: none;
     }
 
   /* section four ends */
@@ -711,24 +763,26 @@ body{
     display: flex;
     justify-content: center;
   }
-  .con-yesno .yesno{
-    padding: 10px 30px;
-    margin: 0px 15px;
+  .con-yesno .yesno {
+    margin: 0px 8px;
+    padding: 10px 10px;
     background-image: linear-gradient(to right, #fff3e2 0%, #ffe4db 100%);
     border: 2px solid #fcc1ad;
-  }
-  .yesno a{
-    text-decoration: none;
-    color: rgb(77, 77, 77);
-    font-family: mulish;
-    font-weight: 600;
-  }
+}
+.yesno a {
+  padding: 9px 30px;
+  padding-top: 0px;
+  text-decoration: none;
+  color: rgb(77, 77, 77);
+  font-family: mulish;
+  font-weight: 600;
+}
   /* POPUP ENDED */
 
   /* footer */
   footer{
     width: 100%;
-    padding: 60px 0px;
+    padding: 50px 0px 30px 0px;
     background:#ffe6a83b;
     color: rgb(56, 56, 56);
     font-family: hind;
@@ -738,7 +792,8 @@ body{
   }
   .f1-col p{
     font-family: sail;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
     text-align: justify;
     text-justify: none;
     padding: 4px 20px;
@@ -750,21 +805,42 @@ body{
     width: 100%;
     justify-content: space-evenly;
     text-align: center;
-
   }
+
   .footer-logo img{
     width: 100px;
   }
+
   .social-media-footer {
     display: flex;
     list-style: none;
     text-align: left;
     justify-content: center;
   }
+
   .social-media-footer li{
    padding: 10px;
    align-items: center;
    text-align: center;
+  }
+
+  .social-media-footer i{
+    font-size: 22px;
+    padding-right: 10px;
+    font-weight: 700;
+  }
+
+  .social-media-foo  ter i a{
+    text-decoration: none;
+  }
+
+  .contact li{
+    list-style: none !important;
+    line-height: 1.5;
+    text-align: start;
+    padding-left: 100px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   /* footer */
 
@@ -927,7 +1003,7 @@ body{
     padding: 100px 40px;
     display: flex;
     justify-content: space-evenly;
-    border:2px solid #e0d6d657;
+    border:2px solid #e0d6d657;four
     
   }
   .sub-counter{

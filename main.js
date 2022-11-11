@@ -1,99 +1,87 @@
 // PRODUCT RATE START JS///////////////////////////////////////////////////////////////////////////
+const products=[{
+  image:'./images/products/1.jpg',
+  brand:"lottie",
+  productName:"Dandelion pendants 🌿",
+  crossRate:290,
+  offer:25,
+  newBadge: "old",
+  url:"https://web.whatsapp.com/"
+},
+{
+  image:'./images/products/2.jpg',
+  brand:"lottie",
+  productName:"Real flower pendants🌼🌿",
+  crossRate:290,
+  offer:25,
+  newBadge: "old",
+  url:"https://web.whatsapp.com/"
+},
+{
+  image:'./images/products/3.jpg',
+  brand:"lottie",
+  productName:"Customised family clock ⌛⏱️",
+  crossRate:290,
+  offer:25,
+  newBadge: "old",
+  url:"https://web.whatsapp.com/"
+},
+{
+  image:'./images/products/4.jpg',
+  brand:"lottie",
+  productName:"Resin initial lamp💡",
+  crossRate:290,
+  offer:25,
+  newBadge: "old",
+  url:"https://web.whatsapp.com/"
+},
+{
+  image:'./images/products/6.jpg',
+  brand:"lottie",
+  productName:"Real flower jewellery 🌼🌿",
+  crossRate:290,
+  offer:25,
+  newBadge: "old",
+  url:"https://web.whatsapp.com/"
+},
+{
+  image:'./images/products/5.jpg',
+  brand:"lottie",
+  productName:"Evil eye pendant and .. 🧿",
+  crossRate:290,
+  offer:25,
+  newBadge: "old",
+  url:"https://web.whatsapp.com/"
+},
+{
+  image:'./images/products/7.jpg',
+  brand:"lottie",
+  productName:"Sun and moon pendant🌞🌚",
+  crossRate:290,
+  offer:25,
+  newBadge: "old",
+  url:"https://web.whatsapp.com/"
+},
+{
+  image:'./images/products/9.jpg',
+  brand:"lottie",
+  productName:"Trippy pendant 🧿✨",
+  crossRate:290,
+  offer:25,
+  newBadge: "old",
+  url:"https://web.whatsapp.com/"
+}];
 
-  /* <div class="subproduct-section">
-                <div class="p-image">
-                    <img src="./images/attachments (1)/IMG_20220819_162053.jpg" alt="">
-                    <span class="new-prod">new</span>
-                </div>
-                <div class="price">
-                    <div class="p-name">
-                        <p class="product-made">Lottiebee Product</p>
-                        <h4 class="product-name"> Butterfly Pendant 🦋</h4>
-                        <div class="rate">
-                            <span><del>₹290</del> &nbsp<span class="og-rate">₹249</span> &nbsp<span class="off">25%off</span></span>
-                        </div>    
-                        <div class="order">
-                            <button style="font-size:20px"> <i class="fa fa-whatsapp" style="font-size:17px;color:rgb(255, 255, 255)" onclick="myFunction()"> Shop Now</i></button>
-                        </div>
-                    </div>
-                </div>
-            </div> }*/
-
-            const products=[{
-              image:'./images/instagram.png',
-              brand:"lottie",
-              productName:"kewbyufgyulghiowefhuykvb",
-              crossRate:290,
-              offer:25,
-              newBadge: "",
-              url:"https://web.whatsapp.com/"
-          },
-          {
-              image:'./images/instagram.png',
-              newBadge: "",
-              brand:"lottie",
-              productName:"lottie222",
-              crossRate:290,
-              offer: 25,
-              url:"https://mazacone.com/"
-          },{
-            image:'./images/s312.jpg',
-            newBadge: "new",
-            brand:"lottie",
-            productName:"lottie222",
-            crossRate:290,
-            offer:25,
-            url:"https://git.com/"
-        },{
-          image:"./images/attachments (1)/IMG_20220819_162053.jpg",
-          newBadge: "new",
-          brand:"lottie",
-          productName:"lottie222",
-          crossRate:290,
-          offer:25
-      },{
-        image:"./images/attachments (1)/IMG_20220819_162053.jpg",
-        newBadge: "new",
-        brand:"lottie",
-        productName:"lottie222",
-        crossRate:290,
-        offer:10,
-       
-    },{
-              image:"./images/attachments (1)/IMG_20220819_162053.jpg",
-              newBadge: "new",
-              brand:"lottie",
-              productName:"lottie22223233",
-              crossRate:290,
-              offer:25
-          },{
-              image:"./images/attachments (1)/IMG_20220819_162053.jpg",
-              brand:"lottie",
-              newBadge: "new",
-              productName:"lottie22223233",
-              crossRate:290,
-              offer:25
-          },{
-              image:"./images/attachments (1)/IMG_20220819_162053.jpg",
-              newBadge: "new",
-              brand:"lottie",
-              productName:"lottie22223233",
-              crossRate:290,
-              offer:25,
-              
-          }];
-
-          let x = "";
-          console.log(x);
 let value = "";
 var parent=document.getElementById("prduct-page");
+
 
 products.map((product,index)=>{
 
 value = value + `<div class="subproduct-section">
 <div class="p-image">
   <img src=${product.image}>
-  <span class="new-prod">${product.newBadge}</span>
+  <span class="new-prod ${product.newBadge}">New</span>
 </div>
 <div class="price">
   <div class="p-name">
@@ -103,36 +91,14 @@ value = value + `<div class="subproduct-section">
           <span><del>₹${product.crossRate}</del> &nbsp<span class="og-rate">₹${product.crossRate - (product.offer/100 * product.crossRate)} </span> &nbsp<span class="off">${product.offer}%</span></span>
       </div>    
       <div class="order">
-          <button style="font-size:20px"> <i class="fa fa-whatsapp" style="font-size:17px;color:rgb(255, 255, 255)" onclick="myFunction(this)" data-index = ${index}> Shop Now</i></button>
+          <button style="font-size:20px" onclick="myFunction(this)" data-index = ${index}> <i class="fa fa-whatsapp" style="font-size:17px;color:rgb(255, 255, 255)" > Shop Now</i></button>
       </div>
   </div>
 </div>
 </div>`;
-parent.innerHTML= value
-
-
+parent.innerHTML= value;
 });
 
-
-      //     var parent=document.getElementById("prduct-page");
-      //     parent.innerHTML=`<div class="subproduct-section">
-      //     <div class="p-image">
-      //         <img src=${product.image}>
-      //         <span class="new-prod">new</span>
-      //     </div>
-      //     <div class="price">
-      //         <div class="p-name">
-      //             <p class="product-made">Lottiebee Product</p>
-      //             <h4 class="product-name"> ${product.productName}</h4>
-      //             <div class="rate">
-      //                 <span><del>${product.crossRate}</del> &nbsp<span class="og-rate">${product.crossRate - (product.offer/100 * product.crossRate)}</span> &nbsp<span class="off">${product.offer}%</span></span>
-      //             </div>    
-      //             <div class="order">
-      //                 <button style="font-size:20px"> <i class="fa fa-whatsapp" style="font-size:17px;color:rgb(255, 255, 255)" onclick="myFunction()"> Shop Now</i></button>
-      //             </div>
-      //         </div>
-      //     </div>
-      // </div> }`;  
 // PRODUCT RATE ENDS JS///////////////////////////////////////////////////////////////////////////
 
 // popup confirmation yes and no start/////////////////////////////////////////////////////////
