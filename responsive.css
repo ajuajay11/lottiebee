@@ -95,6 +95,13 @@
     padding: 10px 25px 60px 25px;
     flex-wrap: wrap;
     flex-direction: column;
+   }.product-name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+   }
+   .product-made{
+    font-size: 18px ;
    }
    .p-image img {
     width: 100%;
@@ -102,6 +109,11 @@
     object-fit: cover;
     border-radius: 1%;
     border:none;
+}
+.subproduct-section {
+    margin: 20px 0px;
+    justify-content: space-around;
+    width: 100%;
 }
 
 
@@ -166,6 +178,10 @@
 
   .footer-sec {
     flex-direction: column;
+  }
+  .footer-sec .ft-3,.ft-2{
+    width: 100% !important;
+    justify-content: center;
   }
   .f1-col p {
     font-size: 28px;
