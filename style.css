@@ -536,6 +536,7 @@ body{
     padding: 10px 10px 10px 15px;
     background-image: linear-gradient(to right, #ffedd6 0%, #ffd9cc 100%);
     height: 160px;
+    width: 100%;
   }
   .product-made{
     padding: 2px 0px;
