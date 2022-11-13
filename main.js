@@ -23,7 +23,7 @@ const products=[{
   productName:"Customised family clock ⌛⏱️",
   crossRate:290,
   offer:25,
-  newBadge: "old",
+  newBadge: "new",
   url:"https://web.whatsapp.com/"
 },
 {
