@@ -41,7 +41,7 @@ const products=[{
   productName:"Real flower jewellery 🌼🌿",
   crossRate:290,
   offer:25,
-  newBadge: "old",
+  newBadge: "new",
   url:"https://web.whatsapp.com/"
 },
 {
@@ -50,7 +50,7 @@ const products=[{
   productName:"Evil eye pendant and .. 🧿",
   crossRate:290,
   offer:25,
-  newBadge: "old",
+  newBadge: "new",
   url:"https://web.whatsapp.com/"
 },
 {
@@ -68,7 +68,7 @@ const products=[{
   productName:"Trippy pendant 🧿✨",
   crossRate:290,
   offer:25,
-  newBadge: "old",
+  newBadge: "new",
   url:"https://web.whatsapp.com/"
 }];
 
