@@ -139,6 +139,7 @@ body{
 }
 .noselect a{
   text-decoration: none;
+  color: #fbddb8;
 }
 
 .noselect:hover {	
