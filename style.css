@@ -137,6 +137,9 @@ body{
     transition: 500ms;
     padding: 12px 20px;
 }
+.noselect a{
+  text-decoration: none;
+}
 
 .noselect:hover {	
 	animation: hueRotation 2s linear infinite;
