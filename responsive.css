@@ -184,9 +184,12 @@
 }
  /* popup */
  /* footer */
-
-  .footer-sec {
+ footer{
+    box-shadow: none;
+ }
+ .footer-sec {
     flex-direction: column;
+
   }
   .footer-sec .ft-3,.ft-2{
     width: 100% !important;
@@ -199,4 +202,27 @@
     width: 100%;
   }
  /* footer */
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 385px){
+    .col-2{
+        height: 70vh;
+        background-size: 120vw 173vw;
+    }
+    .s2-col1, .s2-col2, .s2-col3 {
+        width: 33.33%;
+        padding: 20px 18px;
+        margin-top: 19px;
+    }
+    .two-images .image1 {
+        margin-left: 5px;
+    }
+    .two-images .image2 {
+        
+        margin-top: 90px;
+        margin-left: 10px;
+    }
+    .play-btn {
+        margin: 25px 0px 0px 5px;
+    }
 }

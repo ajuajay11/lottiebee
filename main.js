@@ -6,7 +6,8 @@ const products=[{
   crossRate:290,
   offer:25,
   newBadge: "old",
-  url:"https://web.whatsapp.com/"
+  url:"https://web.whatsapp.com/",
+  filter: "ring"
 },
 {
   image:'./images/products/2.jpg',
@@ -15,7 +16,9 @@ const products=[{
   crossRate:290,
   offer:25,
   newBadge: "old",
-  url:"https://web.whatsapp.com/"
+  url:"https://web.whatsapp.com/",
+  filter: "pendant"
+
 },
 {
   image:'./images/products/3.jpg',
@@ -24,7 +27,9 @@ const products=[{
   crossRate:290,
   offer:25,
   newBadge: "new",
-  url:"https://web.whatsapp.com/"
+  url:"https://web.whatsapp.com/",
+  filter: "ring"
+
 },
 {
   image:'./images/products/4.jpg',
@@ -33,7 +38,8 @@ const products=[{
   crossRate:290,
   offer:25,
   newBadge: "old",
-  url:"https://web.whatsapp.com/"
+  url:"https://web.whatsapp.com/",
+  filter: "pendant"
 },
 {
   image:'./images/products/6.jpg',
@@ -166,4 +172,11 @@ function menuOnClick() {
   document.getElementById("menu-bar").classList.toggle("change");
   document.getElementById("nav").classList.toggle("change");
   document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+function filterSelection(filterValue) {
+  // console.log(filterValue);
+  const result = products.filter((product)=>{
+    return product.filter == filterValue;
+  });
+  console.log(result);
 }
