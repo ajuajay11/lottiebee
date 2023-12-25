@@ -1,0 +1,438 @@
+/*ABOUT US PAGE*/
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,500;0,600;0,800;1,400;1,500;1,600&display=swap');
+
+
+body{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff9f7;
+  /* color: #84795d#a79362; */
+  color: #84795d;
+}
+  
+.section-two,.section-three,.section-four,.section-five, .section-six,.about_collections{
+  padding: 100px 0px !important;
+  background: #fff6f2 !important;
+  text-align: center !important;
+}
+
+#menu {
+  z-index: 2;
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 20px 20px 37px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #a79362;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0px 44px 0px 0px;
+  text-align: end;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #a79362, #a79362);
+  border-top-left-radius: 62%;
+  border-bottom-left-radius: 52%;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 300px;
+  height: 460px;
+  transform: translate(0%,-32%);
+  overflow: hidden;
+}
+
+/* hamburger emded */
+
+
+/* about hero started */
+
+.about-hero{
+  background: url(../images/banner66.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 80vh; 
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* about hero ended */
+
+
+  /* About us page :start */
+
+  .about_container {
+    width: 100%;
+    display: flex;
+    justify-content:baseline;
+    padding: 40px 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .img-abtgallery img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    overflow: hidden;
+  }
+  .img-abtgallery{
+    overflow: hidden;
+    position: relative;
+    width: 25%;
+  }
+  .image {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1s ease;
+    background-image: linear-gradient(to top, #ffe8c7 20%, #fcb69f 100%);
+  }
+  
+  .img-abtgallery:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-family: sail;
+    font-size: 30px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  /* about us page ends */
+
+  /*section aboutus-two*/
+
+  .abt-section1{
+    display: flex;
+    padding: 100px;
+  }
+
+  .section1-left img{
+    width: 50%;
+    
+  }
+
+  .section1-left img{
+    margin: 0px 100px 0px 0px;
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    box-shadow: 2px 2px 2px #a3a3a3;
+  }
+  .section1-right-content h2{
+    font-size: 50px;
+    font-family: sail;
+  }
+  .section1-right-content p{
+    font-size: 24px;
+    font-family: hind;
+    color: #8d8d8d;
+    text-align: justify;
+     text-justify: none;
+     padding-bottom: 40px;
+  }
+  .section1-right-content a{
+    font-size: 18px;
+    font-family: hind;
+    color: #ffffff;
+    background: #444;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: 1s;
+  }
+  .section1-right-content a:hover{
+    background: #ffd8a2;
+    box-shadow: 0px 0px 20px 3px rgb(213 174 116 / 80%);
+    color: #444;
+  }
+  /*section aboutus-two*/
+  
+  /* counter aboutus start */
+
+  .aboutus-counter{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    padding: 100px 40px;
+    display: flex;
+    justify-content: space-evenly;
+    border:2px solid #e0d6d657;
+    
+  }
+  .sub-counter{
+    text-align: center;
+    align-items: center;
+  }
+  .sub-counter h3{
+    font-size: 30px;
+    font-family: sail;
+    color: rgb(75, 42, 12);
+    text-shadow: 1px 1px rgb(105, 104, 104);
+  }
+  .sub-counter .counter{
+    font-size: 42px;
+    font-weight: 600;
+    color: #333;
+    text-shadow: 1px 1px rgb(105, 104, 104);
+  }
+  .sub-counter .plus{
+    font-size: 42px;
+    font-family: sail;  
+    font-weight: 600;
+    color: #333;
+    text-shadow: 1px 1px rgb(105, 104, 104);
+  }
+
+  /* counter about us ends */
+
+  /* section testimonal starts */
+
+  .section-six{
+    padding:190px 100px ;
+    background: #fff9f7 !important;
+  }
+  .myslides {
+    display: none;
+  }
+  .comma-one{
+    position: absolute;
+    left: 140px;
+    font-size: 130px;
+    color:#ffad92;
+  }
+  .comma-two{
+    position: absolute;
+    right: 140px;
+    font-size: 130px;
+    color:#ff7243;
+  }
+  .myslides{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    box-shadow: 0px 0px 18px 3px #d7d7d7;
+   text-align: center;
+   padding: 15px 30px 10px 30px;
+   border-radius: 30px;
+   margin: 30px 120px;
+  }
+  .testimonial{
+    padding: 0px 0px 40px 0px;
+  }
+  .testimonial h2{
+    font-family: sail;
+    color: rgb(75, 42, 12);
+    font-size: 35px;
+    margin: 10px 0px;
+  }
+  .testimonial p{
+    padding: 0px 120px;
+    color: #333;
+    font-weight: 600;
+  }
+  .avatar-testimonial{
+    width: 100px !important;
+    border-radius: 50%;
+    padding: 0px;
+  }
+  .star::after{
+    content: "\e047";
+  }
+  .myslides img{
+    width: 40px;
+    padding: 15px 0px;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(255, 187, 190);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #ff4f4f;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* section testimonal ends */
+
+
+
+  /* footer */
+  footer{
+    width: 100%;
+    box-shadow: 0px 14px 21px #000;
+    padding: 50px 0px 30px 0px;
+    background:#ffe6a83b;
+    color: rgb(56, 56, 56);
+    font-family: hind;
+  }
+  .f1-col{
+    width: 33.33%;
+  }
+  .f1-col p{
+    font-family: sail;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: justify;
+    text-justify: none;
+    padding: 4px 20px;
+    
+  }
+
+  .footer-sec{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .footer-logo img{
+    width: 100px;
+  }
+
+  .social-media-footer {
+    display: flex;
+    list-style: none;
+    text-align: left;
+    justify-content: center;
+  }
+
+  .social-media-footer li{
+   padding: 10px;
+   align-items: center;
+   text-align: center;
+  }
+
+  .social-media-footer i{
+    font-size: 22px;
+    padding-right: 10px;
+    font-weight: 700;
+  }
+
+  .social-media-foo  ter i a{
+    text-decoration: none;
+  }
+  footer .contact{
+    padding: 0;
+  }
+  .contact li{
+    list-style: none !important;
+    line-height: 1.5;
+    text-align: center;
+    /* padding-left: 100px; */
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  /* footer */
+
+
+
+  /*ABOUT US PAGE*/

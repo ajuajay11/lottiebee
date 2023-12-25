@@ -74,8 +74,9 @@
      .s2 {
          flex-direction: column;
      }
+
      .s2-col1, .s2-col2, .s2-col3{
-        width: 90%;
+        width: 90% !important;
      }
      .s2-img .s2-image1, .s2-image2{
         height: 380px;
@@ -210,7 +211,6 @@
         background-size: 120vw 173vw;
     }
     .s2-col1, .s2-col2, .s2-col3 {
-        width: 33.33%;
         padding: 20px 18px;
         margin-top: 19px;
     }

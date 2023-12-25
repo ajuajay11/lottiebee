@@ -3,8 +3,8 @@ const products=[{
   image:'./images/products/1.jpg',
   brand:"lottie",
   productName:"Dandelion pendants 🌿",
-  crossRate:290,
-  offer:25,
+  crossRate:300,
+  offer:17,
   newBadge: "old",
   url:"https://web.whatsapp.com/",
   filter: "ring"
@@ -13,8 +13,8 @@ const products=[{
   image:'./images/products/2.jpg',
   brand:"lottie",
   productName:"Real flower pendants🌼🌿",
-  crossRate:290,
-  offer:25,
+  crossRate:500,
+  offer: 50,
   newBadge: "old",
   url:"https://web.whatsapp.com/",
   filter: "pendant"
@@ -81,7 +81,6 @@ const products=[{
 let value = "";
 var parent=document.getElementById("prduct-page");
 
-
 products.map((product,index)=>{
 
 value = value + `<div class="subproduct-section">
@@ -136,7 +135,7 @@ btn.addEventListener('click', (event) => {
 
 // CAROUSEL STARTS/////////////////////////////////////////////////////////////////////////////
 
-let slideIndex = 1;
+let slideIndex = 3;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -153,7 +152,7 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("myslides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
+  if (n > slides.length) {slideIndex = 3}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -164,6 +163,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
 
 // CAROUSEL ENDS///////////////////////////////////////////////////////////////////////////////////
 
